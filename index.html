@@ -1,200 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ayobami Osomo Profile</title>
-</head>
-
-<body>
-    <header>
-        <div class="row no-gutters">
-            <a href="index.html" class="col-md-4 logo"></a>
-            <div class="col-md-8">
-                <div class="row no-gutters bg-color-name-title">
-                    <div class="col heading">
-                        <h1 class="name">Ayobami Osomo</h1>
-                        <h2 class="title">Full Stack Developer</h2>
-                    </div>
-                </div>
-                <div class="row no-gutters">
-                    <div class="col">
-                        <ul id="nav" class="list-inline menucontainer">
-                            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
-                                <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
-                            </li>
-                            <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
-                                <a href="resume.html" class="hvr-sweep-to-bottom "><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
-                            </li>
-                            <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
-                                <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
-                            </li>
-                            <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
-                                <a href="assets/cv/ayobami CV.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Olu Osomo builds accessible, resilient frontend products with strong delivery discipline." />
+    <meta name="theme-color" content="#08111f" />
+    <title>Olu Osomo · Frontend Engineer</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Olu Osomo home">OO<span>.</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#approach">Approach</a>
+        <a href="https://github.com/ayosomo">GitHub</a>
+      </nav>
     </header>
-    <section class="container-fluid">
-        <div class="row">
-            <div class="col-md-4 bg-color-personal-info section-column">
-                <div class="row">
-                    <div class="col-12">
-                        <h3 class="section-heading uppercase">
-                            Personal Info
-                        </h3>
-                    </div>
-                </div>
-                <div class="personal-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Name:
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            Ayobami Osomo
-                        </p>
-                    </div>
-                </div>
-                <div class="personal-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Address:
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            44 Torcross Road, Manchester United Kingdom M9 0QP
-                        </p>
-                    </div>
-                </div>
-                <div class="personal-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Phone:
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            +447450229270
-                        </p>
-                    </div>
-                </div>
-                <div class="personal-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Email:
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            kosomo44@gmail.com
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 bg-color-three-reasons section-column">
-                <div class="row">
-                    <div class="col">
-                        <h3 class="section-heading uppercase">Who am I</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="three-reasons-icon fa fa-question" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-10">
-                                <h4 class="three-reasons-heading uppercase">What I do?</h4>
-                                <p>
-                                    I am a skilled full stack web developer with vast knowledge of technical experience that I bring to all the projects I participate in.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="three-reasons-icon fa fa-thumbs-up" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-10">
-                                <h4 class="three-reasons-heading uppercase">How I do it?</h4>
-                                <p>
-                                    I follow form as well as function in order for me to understand the aesthetics of effective design combined with delivery of the application speed, security and relaibility in order for me to cretae a great user experience.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="three-reasons-icon fa fa-bolt" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-10">
-                                <h4 class="three-reasons-heading uppercase">Why Hire Me?</h4>
-                                <p>
-                                    I am able to work as part of team effectively in order to reach the desired goal, I also work quickly in getting project built and working across the stack. I'm a excellent communicator who thrives in bright and entusiastic teams but also a self starter
-                                    when working solo.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <p class="eyebrow">Frontend engineer · Product-minded builder</p>
+        <h1>I build calm interfaces for <em>complex work.</em></h1>
+        <p class="hero-copy">I turn operational workflows, live data and reusable UI patterns into accessible products that are straightforward to use and maintain.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">View selected work</a>
+          <a class="button secondary" href="https://github.com/ayosomo">Explore GitHub</a>
         </div>
+        <ul class="signal-list" aria-label="Engineering strengths">
+          <li><strong>Accessible</strong><span>Keyboard and screen-reader aware</span></li>
+          <li><strong>Tested</strong><span>Unit, integration and journey coverage</span></li>
+          <li><strong>Shipped</strong><span>CI-gated production deployments</span></li>
+        </ul>
+      </section>
 
-    </section>
-    <footer class="container-fluid">
-        <div id="footer-details" class="row">
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub">About</h5>
-                <p class="inline-block">
-                    Full Stack Web Developer. Skilled in all aspects from HTML to Django, also with capacity to learn new skills.
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub">Download</h5>
-                <p class="inline-block">
-                    Need a printable version of my CV? Download it here.
-                    <a href="assets/cv/ayobami CV.pdf" target="_blank" class="cv-pdf">
-                        <i class="fa fa-download" arai-hidden="true"></i>
-                        <span class="sr-only">Download link.</span>
-                    </a>
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub">Social</h5>
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.instagram.com/ayo_code/">
-                            <i class="fa fa-instagram" arai-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.linkedin.com/feed/">
-                            <i class="fa fa-linkedin" arai-hidden="true"></i>
-                            <span class="sr-only">LinkedIn</span>
-                        </a>
-                    </li>
-
-
-                </ul>
-            </div>
+      <section class="work-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Three products, three engineering problems.</h2>
         </div>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-number">01</div>
+            <div>
+              <p class="project-type">Operations SaaS</p>
+              <h3>Trackvera</h3>
+              <p>An order-control workspace that makes delivery milestones, exceptions and RACI accountability visible at a glance.</p>
+              <ul class="tags"><li>React</li><li>TypeScript</li><li>Playwright</li></ul>
+              <div class="project-links">
+                <a href="https://trackvera-saas-dashboard.vercel.app/projects">Live demo <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/ayosomo/trackvera-saas-dashboard">Source <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <div>
+              <p class="project-type">Engineering intelligence</p>
+              <h3>CommitVista</h3>
+              <p>A live GitHub activity dashboard that turns public signals into explainable context without reducing people to scores.</p>
+              <ul class="tags"><li>React</li><li>TypeScript</li><li>GitHub API</li></ul>
+              <div class="project-links">
+                <a href="https://commitvista.vercel.app">Live demo <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/ayosomo/commitvista">Source <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">03</div>
+            <div>
+              <p class="project-type">Interface system</p>
+              <h3>ElementSmith</h3>
+              <p>An accessible component playground built with browser-native technologies and deliberate interaction contracts.</p>
+              <ul class="tags"><li>Web Components</li><li>CSS</li><li>Vite</li></ul>
+              <div class="project-links">
+                <a href="https://ayosomo.github.io/elementsmith/">Live demo <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/ayosomo/elementsmith">Source <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="approach-section" id="approach" aria-labelledby="approach-title">
+        <div class="section-heading">
+          <p class="eyebrow">How I work</p>
+          <h2 id="approach-title">Product thinking backed by engineering evidence.</h2>
+        </div>
+        <div class="approach-grid">
+          <article><span>01</span><h3>Clarify the workflow</h3><p>Start with the user’s decision, the system boundary and the failure states that matter.</p></article>
+          <article><span>02</span><h3>Build the smallest resilient path</h3><p>Use clear component contracts, accessible semantics and predictable state ownership.</p></article>
+          <article><span>03</span><h3>Prove it before release</h3><p>Automate quality checks, test critical journeys and deploy only verified commits.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Designed and engineered by Olu Osomo.</p>
+      <a href="https://github.com/ayosomo">github.com/ayosomo <span aria-hidden="true">↗</span></a>
     </footer>
-</body>
-
+  </body>
 </html>

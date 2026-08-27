@@ -1,78 +1,65 @@
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/ayosomo/UCD-resume) 
+# UCD Resume — Portfolio
 
-# User Centric Frontend Development Project
-# BY Ayobami Osomo
+[![CI](https://github.com/ayosomo/UCD-resume/actions/workflows/ci.yml/badge.svg)](https://github.com/ayosomo/UCD-resume/actions/workflows/ci.yml)
 
-# Project Purpose.
-### The Idea behind the project was to create a fully functional website showcasing my ability from what I have learned so far for potential employers.
+A focused frontend-engineering portfolio for Olu Osomo. The site presents three production-style projects, the engineering problems behind them and the quality practices used to ship them.
 
-  # UX
-  * Users will be able to view who I am and what I do and they will also be able to view my resume letting them know what I am capable of. 
-  * They will also be able to navigate through the website for ease.
-  
- # Suitability for Purpose
-  * Users can view my personal information, check my resume and also navigate through the site to download my cv.
-  * Users will also be able to navigate through the site to find my social networks.
-  
- # Navigation and Ease of Use
-  - Navigation element was created so users can go throught the site with ease withought the prolonged process of going back to a previouse page to get on to the next page they would like to view.
-  - Users will also be able to contact me through the contacts form or personally from the information provided 
- 
- # Information Architecture
-  - With users in mind I designed the website with the sole purpose not to put too much information but enough to hopefully grab their attention
-  
- # Layout and Visual Impact:
-  - Responsive Design was created so users can get to their desired landing page with ease.
-  - Image of myself was uploade so users can see who I am but for unknow errors it images does not show while testing or when fully deployed, but if users do go on my social profiles then they will be bale to view my image.
-  - Colour scheme was chosen as I feel it helps the website look apealing to the eyes and grab the attention of the user.
-  
- # Code Quality:
-  - Html5 was used to create the landing pages for the website (index, contact and resume)
-  - CSS3 was used to design the website in order to give it the appealing architecture 
+| | |
+| --- | --- |
+| **Live demo** | [Open the portfolio](https://ayosomo.github.io/UCD-resume/) |
+| **Stack** | Semantic HTML, modern CSS, responsive design |
+| **Tests** | Node test runner for structure, content and privacy checks |
+| **Deployment** | GitHub Pages, gated by GitHub Actions |
 
-# TESTING
-- BROWSERS: This app is tested on google chrome and microsoft edge, and the desired result was 99.9% achieved.
-- w3c validator: The html and css file are validated by direct input at https://validator.w3.org/#validate_by_input and the necessary corrections were made.
+## Screenshot
 
-# Technolgies Used
- ## The tehnologies used for the design of this app are:
+![Portfolio homepage showing selected frontend engineering work](./docs/images/portfolio.png)
 
-#### html5:
+## Highlights
 
-- This is the markup language used to provide the core content and the structure of this application.
-https://www.w3.org/html/
-css3:
+- Clear positioning and concise project case-study cards
+- Direct links to live demos and source repositories
+- Responsive layout with a dark, high-contrast visual system
+- Semantic landmarks, skip navigation and visible keyboard focus
+- Reduced-motion support
+- No home address, phone number or non-functional contact form
 
-- https://www.w3.org/Style/CSS/ +Cascading style sheet 3 is used to style and describe the presentation of the html5 markup in this project
+## Installation
 
-- javascript: Is used with html5 svg element to draw the hamburger menu used for the side nav. It is also used to style the margin and width of the 'title' and 'slide-menu' when the side nav is clicked on.
+Prerequisite: Node.js 20 or newer for the automated checks.
 
-#### jQuerry:
+```bash
+git clone https://github.com/ayosomo/UCD-resume.git
+cd UCD-resume
+npm install
+npm test
+```
 
-- https://jquery.com/
-simplify DOM manipulation
-used with bootstrap to implement the pictorial slideshow on the showcase.html page
-bootstrap
+Open `index.html` directly or start a local static server:
 
-- https://getbootstrap.com/
-it is used to apply the rule of third to the styling of row and column on the service.html page
-used in conjuction with jQuerry to provide the slideshow on showcase.html page
-fontawesome:
+```bash
+npx serve .
+```
 
-- https://fontawesome.com/
-used to provide styling for the social icon
+## Tests
 
-# DEPLOYMENT
-- A streamlined version of this app has been deployed to github from C9 and was also tested through http://ami.responsivedesign.is/ in order to see how it will look.
-- Full version of the app was then delopyed to github
+```bash
+npm test
+```
 
-# CREDIT:
-The code institute tutorial team
+The test suite verifies the document structure, project links, accessibility hooks, stylesheet reference and the removal of obsolete personal contact details.
 
-https://codeinstitute.net/
+## Project structure
 
-# Comments
-Image of myself was uploaded but unable to see it when testing or deployed. Hopefully this does not cost me crucial marks.
+```text
+.
+├── .github/workflows/  # CI and GitHub Pages release
+├── assets/css/         # Visual system and responsive layout
+├── docs/images/        # README screenshot
+├── tests/              # Dependency-free source checks
+└── index.html          # Portfolio content and semantic structure
+```
 
-# ACKNOLEDGEMENT
-This project work is modelled according the code institute training instruction.
+## Licence
+
+Copyright (c) 2026 Olu Osomo. All rights reserved. The source is available for portfolio review.
