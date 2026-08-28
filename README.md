@@ -2,14 +2,14 @@
 
 [![CI](https://github.com/ayosomo/UCD-resume/actions/workflows/ci.yml/badge.svg)](https://github.com/ayosomo/UCD-resume/actions/workflows/ci.yml)
 
-A focused frontend-engineering portfolio for Olu Osomo. The site presents three production-style projects, the engineering problems behind them and the quality practices used to ship them.
+A focused frontend-engineering portfolio for Olu Osomo. The site presents selected products, the engineering problems behind them, Olu's professional journey and the quality practices used to ship dependable interfaces.
 
 | | |
 | --- | --- |
-| **Live demo** | [Open the portfolio](https://ayosomo.github.io/UCD-resume/) |
-| **Stack** | Semantic HTML, modern CSS, responsive design |
+| **Live demo** | [Open the portfolio](https://olu-osomo-portfolio.vercel.app/) |
+| **Stack** | Semantic HTML, modern CSS, JavaScript, Vite |
 | **Tests** | Node test runner for structure, content and privacy checks |
-| **Deployment** | GitHub Pages, gated by GitHub Actions |
+| **Deployment** | Vercel |
 
 ## Screenshot
 
@@ -17,34 +17,36 @@ A focused frontend-engineering portfolio for Olu Osomo. The site presents three 
 
 ## Highlights
 
-- Clear positioning and concise project case-study cards
+- Clear positioning and product-focused project case studies
 - Direct links to live demos and source repositories
-- Responsive layout with a dark, high-contrast visual system
-- Semantic landmarks, skip navigation and visible keyboard focus
-- Reduced-motion support
+- Responsive layout with a distinctive high-contrast visual system
+- Resume-informed experience, education and skills sections
+- Accessible mobile navigation, semantic landmarks and visible keyboard focus
+- Progressive reveal effects with reduced-motion support
 - No home address, phone number or non-functional contact form
 
 ## Installation
 
-Prerequisite: Node.js 20 or newer for the automated checks.
+Prerequisites: Node.js 22.13 or newer and pnpm.
 
 ```bash
 git clone https://github.com/ayosomo/UCD-resume.git
 cd UCD-resume
-npm install
-npm test
+pnpm install
+pnpm test
+pnpm build
 ```
 
-Open `index.html` directly or start a local static server:
+Start the local development server:
 
 ```bash
-npx serve .
+pnpm dev
 ```
 
 ## Tests
 
 ```bash
-npm test
+pnpm test
 ```
 
 The test suite verifies the document structure, project links, accessibility hooks, stylesheet reference and the removal of obsolete personal contact details.
@@ -55,6 +57,7 @@ The test suite verifies the document structure, project links, accessibility hoo
 .
 ├── .github/workflows/  # CI and GitHub Pages release
 ├── assets/css/         # Visual system and responsive layout
+├── assets/js/          # Navigation and progressive enhancement
 ├── docs/images/        # README screenshot
 ├── tests/              # Dependency-free source checks
 └── index.html          # Portfolio content and semantic structure

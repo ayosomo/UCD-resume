@@ -3,104 +3,225 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Olu Osomo builds accessible, resilient frontend products with strong delivery discipline." />
-    <meta name="theme-color" content="#08111f" />
+    <meta name="description" content="Olu Osomo is a frontend engineer building accessible, resilient interfaces for complex products." />
+    <meta name="theme-color" content="#07110d" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Olu Osomo · Frontend Engineer" />
+    <meta property="og:description" content="Accessible interfaces for complex work." />
+    <meta property="og:url" content="https://olu-osomo-portfolio.vercel.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Olu Osomo · Frontend Engineer" />
+    <meta name="twitter:description" content="Accessible interfaces for complex work." />
     <title>Olu Osomo · Frontend Engineer</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="module" src="assets/js/site.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Olu Osomo home">OO<span>.</span></a>
-      <nav aria-label="Primary navigation">
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#top" aria-label="Olu Osomo, home">
+        <span class="wordmark-mark" aria-hidden="true">O</span>
+        <span>Olu Osomo</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span>Menu</span>
+        <span class="menu-lines" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" aria-label="Primary navigation">
         <a href="#work">Work</a>
-        <a href="#approach">Approach</a>
-        <a href="https://github.com/ayosomo">GitHub</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="https://github.com/ayosomo">GitHub <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
 
     <main id="main">
-      <section class="hero" id="top">
-        <p class="eyebrow">Frontend engineer · Product-minded builder</p>
-        <h1>I build calm interfaces for <em>complex work.</em></h1>
-        <p class="hero-copy">I turn operational workflows, live data and reusable UI patterns into accessible products that are straightforward to use and maintain.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#work">View selected work</a>
-          <a class="button secondary" href="https://github.com/ayosomo">Explore GitHub</a>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+        <div class="hero-intro reveal">
+          <p class="availability"><span aria-hidden="true"></span> Open to thoughtful frontend opportunities</p>
+          <p class="eyebrow">Frontend engineer · Manchester, UK</p>
+          <h1 id="hero-title">I make complex products feel <em>clear.</em></h1>
+          <p class="hero-copy">I’m Olu, a product-minded frontend engineer who turns operational workflows, live data and reusable UI patterns into accessible experiences people can trust.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="https://github.com/ayosomo">View GitHub profile <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        <ul class="signal-list" aria-label="Engineering strengths">
-          <li><strong>Accessible</strong><span>Keyboard and screen-reader aware</span></li>
-          <li><strong>Tested</strong><span>Unit, integration and journey coverage</span></li>
-          <li><strong>Shipped</strong><span>CI-gated production deployments</span></li>
-        </ul>
+
+        <aside class="hero-console reveal" aria-label="Engineering profile">
+          <div class="console-topbar">
+            <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+            <p>profile.ts</p>
+          </div>
+          <div class="console-body" aria-hidden="true">
+            <p><span class="code-key">const</span> engineer = {</p>
+            <p class="indent">focus: <span class="code-string">"frontend systems"</span>,</p>
+            <p class="indent">caresAbout: [</p>
+            <p class="indent-two"><span class="code-string">"accessibility"</span>,</p>
+            <p class="indent-two"><span class="code-string">"clarity"</span>,</p>
+            <p class="indent-two"><span class="code-string">"reliability"</span></p>
+            <p class="indent">],</p>
+            <p class="indent">ships: <span class="code-value">true</span></p>
+            <p>};</p>
+          </div>
+          <div class="console-status"><span aria-hidden="true"></span> Ready to build</div>
+        </aside>
       </section>
 
-      <section class="work-section" id="work" aria-labelledby="work-title">
-        <div class="section-heading">
-          <p class="eyebrow">Selected work</p>
-          <h2 id="work-title">Three products, three engineering problems.</h2>
+      <section class="principles" aria-label="Core engineering principles">
+        <article><span class="principle-number">01</span><div><h2>Accessible by default</h2><p>Semantic, keyboard-aware and inclusive from the first component.</p></div></article>
+        <article><span class="principle-number">02</span><div><h2>Built for change</h2><p>Clear contracts and maintainable systems that scale with the product.</p></div></article>
+        <article><span class="principle-number">03</span><div><h2>Evidence over guesswork</h2><p>Critical journeys tested and quality checks built into delivery.</p></div></article>
+      </section>
+
+      <section class="work-section section-shell" id="work" aria-labelledby="work-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Selected work · 2026</p>
+            <h2 id="work-title">Products built around real decisions.</h2>
+          </div>
+          <p>Three projects that show how I approach operational complexity, live data and reusable interface systems.</p>
         </div>
-        <div class="project-grid">
-          <article class="project-card featured">
-            <div class="project-number">01</div>
-            <div>
-              <p class="project-type">Operations SaaS</p>
+
+        <div class="project-list">
+          <article class="project-card project-featured reveal">
+            <div class="project-visual trackvera-visual" aria-hidden="true">
+              <div class="mock-window">
+                <div class="mock-sidebar"><span></span><span></span><span></span><span></span></div>
+                <div class="mock-content">
+                  <div class="mock-heading"></div>
+                  <div class="mock-stat-row"><span></span><span></span><span></span></div>
+                  <div class="mock-table"><span></span><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-copy">
+              <div class="project-index"><span>01</span><span>Operations SaaS</span></div>
               <h3>Trackvera</h3>
               <p>An order-control workspace that makes delivery milestones, exceptions and RACI accountability visible at a glance.</p>
-              <ul class="tags"><li>React</li><li>TypeScript</li><li>Playwright</li></ul>
+              <div class="project-proof">
+                <div><span>Challenge</span><strong>Dense operational state</strong></div>
+                <div><span>Focus</span><strong>Hierarchy & accountability</strong></div>
+              </div>
+              <ul class="tags" aria-label="Trackvera technology"><li>React</li><li>TypeScript</li><li>Playwright</li></ul>
               <div class="project-links">
-                <a href="https://trackvera-saas-dashboard.vercel.app/projects">Live demo <span aria-hidden="true">↗</span></a>
-                <a href="https://github.com/ayosomo/trackvera-saas-dashboard">Source <span aria-hidden="true">↗</span></a>
+                <a class="button button-small" href="https://trackvera-saas-dashboard.vercel.app/projects">Live product <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="https://github.com/ayosomo/trackvera-saas-dashboard">Source code <span aria-hidden="true">↗</span></a>
               </div>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-number">02</div>
-            <div>
-              <p class="project-type">Engineering intelligence</p>
-              <h3>CommitVista</h3>
-              <p>A live GitHub activity dashboard that turns public signals into explainable context without reducing people to scores.</p>
-              <ul class="tags"><li>React</li><li>TypeScript</li><li>GitHub API</li></ul>
-              <div class="project-links">
-                <a href="https://commitvista.vercel.app">Live demo <span aria-hidden="true">↗</span></a>
-                <a href="https://github.com/ayosomo/commitvista">Source <span aria-hidden="true">↗</span></a>
+          <div class="project-pair">
+            <article class="project-card reveal">
+              <div class="project-visual commitvista-visual" aria-hidden="true">
+                <div class="activity-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                <div class="activity-note"><span></span><span></span></div>
               </div>
-            </div>
-          </article>
+              <div class="project-copy">
+                <div class="project-index"><span>02</span><span>Engineering intelligence</span></div>
+                <h3>CommitVista</h3>
+                <p>A live GitHub activity dashboard that turns public signals into useful context without reducing people to a score.</p>
+                <ul class="tags" aria-label="CommitVista technology"><li>React</li><li>TypeScript</li><li>GitHub API</li></ul>
+                <div class="project-links">
+                  <a class="text-link" href="https://commitvista.vercel.app">Live product <span aria-hidden="true">↗</span></a>
+                  <a class="text-link" href="https://github.com/ayosomo/commitvista">Source <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
 
-          <article class="project-card">
-            <div class="project-number">03</div>
-            <div>
-              <p class="project-type">Interface system</p>
-              <h3>ElementSmith</h3>
-              <p>An accessible component playground built with browser-native technologies and deliberate interaction contracts.</p>
-              <ul class="tags"><li>Web Components</li><li>CSS</li><li>Vite</li></ul>
-              <div class="project-links">
-                <a href="https://ayosomo.github.io/elementsmith/">Live demo <span aria-hidden="true">↗</span></a>
-                <a href="https://github.com/ayosomo/elementsmith">Source <span aria-hidden="true">↗</span></a>
+            <article class="project-card reveal">
+              <div class="project-visual elementsmith-visual" aria-hidden="true">
+                <div class="component-stack"><span>Button</span><span>Input</span><span>Dialog</span></div>
+                <div class="component-cursor">+</div>
               </div>
-            </div>
-          </article>
+              <div class="project-copy">
+                <div class="project-index"><span>03</span><span>Interface system</span></div>
+                <h3>ElementSmith</h3>
+                <p>An accessible component playground built with browser-native technologies and deliberate interaction contracts.</p>
+                <ul class="tags" aria-label="ElementSmith technology"><li>Web Components</li><li>CSS</li><li>Vite</li></ul>
+                <div class="project-links">
+                  <a class="text-link" href="https://ayosomo.github.io/elementsmith/">Live product <span aria-hidden="true">↗</span></a>
+                  <a class="text-link" href="https://github.com/ayosomo/elementsmith">Source <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="approach-section" id="approach" aria-labelledby="approach-title">
-        <div class="section-heading">
-          <p class="eyebrow">How I work</p>
-          <h2 id="approach-title">Product thinking backed by engineering evidence.</h2>
+      <section class="experience-section section-shell" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Experience</p>
+            <h2 id="experience-title">Technical craft, grounded in people.</h2>
+          </div>
+          <p>My path into engineering started with customer-facing and care roles—work that sharpened the empathy, communication and calm problem-solving I bring to software.</p>
         </div>
-        <div class="approach-grid">
-          <article><span>01</span><h3>Clarify the workflow</h3><p>Start with the user’s decision, the system boundary and the failure states that matter.</p></article>
-          <article><span>02</span><h3>Build the smallest resilient path</h3><p>Use clear component contracts, accessible semantics and predictable state ownership.</p></article>
-          <article><span>03</span><h3>Prove it before release</h3><p>Automate quality checks, test critical journeys and deploy only verified commits.</p></article>
+
+        <div class="experience-grid">
+          <ol class="timeline">
+            <li class="reveal">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-meta"><span>Since 2018</span><span>Independent</span></div>
+              <div><h3>Freelance Web Developer</h3><p>Building and improving web applications, translating new technical skills into more resilient frontend and backend solutions.</p></div>
+            </li>
+            <li class="reveal">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-meta"><span>Customer operations</span><span>First Direct</span></div>
+              <div><h3>Customer Service Representative</h3><p>Guided customers through financial and digital-service queries, explaining secure processes clearly and step by step.</p></div>
+            </li>
+            <li class="reveal">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-meta"><span>Earlier career</span><span>Care sector</span></div>
+              <div><h3>Care & Support Roles</h3><p>Built a foundation in responsibility, record keeping, collaboration and thoughtful communication with people under pressure.</p></div>
+            </li>
+          </ol>
+
+          <aside class="skills-panel reveal" aria-labelledby="skills-title">
+            <p class="eyebrow">Working toolkit</p>
+            <h3 id="skills-title">From interface to delivery.</h3>
+            <div class="skill-group"><span>Frontend</span><p>HTML · CSS · JavaScript · TypeScript · React · Web Components</p></div>
+            <div class="skill-group"><span>Backend</span><p>Python · Django · APIs · Data flows</p></div>
+            <div class="skill-group"><span>Quality</span><p>Accessibility · Playwright · CI/CD · Responsive design</p></div>
+            <div class="skill-group"><span>Analysis</span><p>Excel · SPSS · Research · Structured problem-solving</p></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="about-section section-shell" id="about" aria-labelledby="about-title">
+        <div class="portrait-frame reveal">
+          <img src="images/Ayobami.jpg" alt="Portrait of Olu Osomo" width="500" height="500" loading="lazy" />
+          <span aria-hidden="true">Manchester · UK</span>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">Curiosity across disciplines.</h2>
+          <p class="about-lead">I came to software through sport science, customer service and a full-stack development programme. That mix taught me to look at systems from more than one angle.</p>
+          <p>Today I focus on frontend engineering: the point where product intent, technical constraints and human behaviour meet. I enjoy taking a busy workflow and finding the structure that makes it feel obvious.</p>
+          <div class="education-row">
+            <div><span>2019—2020</span><strong>Full-Stack Web Development</strong><p>Code Institute</p></div>
+            <div><span>2014—2017</span><strong>BSc Sport & Exercise Science</strong><p>Manchester Metropolitan University</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section-shell reveal" aria-labelledby="contact-title">
+        <p class="eyebrow">Let’s build something clear</p>
+        <h2 id="contact-title">Have a complex product problem?</h2>
+        <p>I’m interested in frontend roles where accessibility, product thinking and dependable delivery matter.</p>
+        <div class="contact-actions">
+          <a class="button button-primary" href="https://github.com/ayosomo">Start on GitHub <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#top">Back to top <span aria-hidden="true">↑</span></a>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>Designed and engineered by Olu Osomo.</p>
-      <a href="https://github.com/ayosomo">github.com/ayosomo <span aria-hidden="true">↗</span></a>
+      <p>© <span data-year>2026</span> Olu Osomo. Designed and engineered with care.</p>
+      <div><a href="https://github.com/ayosomo">GitHub</a><a href="#work">Selected work</a></div>
     </footer>
   </body>
 </html>
