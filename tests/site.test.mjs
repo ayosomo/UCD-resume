@@ -33,8 +33,13 @@ test("links every featured project to source and a live product", () => {
 test("adds resume context without republishing private contact details", () => {
   assert.match(html, /Ethernet Delivery Specialist/);
   assert.match(html, /TalkTalk Business/);
-  assert.match(html, /Legal & General/);
+  assert.match(html, /Frontend Developer/);
+  assert.match(html, /2026—Present/);
+  assert.match(html, /Trackvera/);
+  assert.match(html, /CommitVista/);
+  assert.match(html, /ElementSmith/);
   assert.match(html, /NableTech/);
+  assert.doesNotMatch(html, /Legal & General/);
   assert.match(html, /Code Institute/);
   assert.match(html, /Manchester Metropolitan University/);
   assert.doesNotMatch(html, /Torcross|07450|1912894542|M9 0QP|07852|ayo\.osomo@/i);
