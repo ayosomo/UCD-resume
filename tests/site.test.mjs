@@ -31,15 +31,18 @@ test("links every featured project to source and a live product", () => {
 });
 
 test("adds resume context without republishing private contact details", () => {
-  assert.match(html, /Freelance Web Developer/);
+  assert.match(html, /Ethernet Delivery Specialist/);
+  assert.match(html, /TalkTalk Business/);
+  assert.match(html, /Legal & General/);
+  assert.match(html, /NableTech/);
   assert.match(html, /Code Institute/);
   assert.match(html, /Manchester Metropolitan University/);
-  assert.doesNotMatch(html, /Torcross|07450|1912894542|M9 0QP/i);
+  assert.doesNotMatch(html, /Torcross|07450|1912894542|M9 0QP|07852|ayo\.osomo@/i);
 });
 
 test("preserves accessible navigation, motion and progressive enhancement", () => {
   assert.match(html, /aria-expanded="false"/);
-  assert.match(html, /alt="Portrait of Olu Osomo"/);
+  assert.match(html, /alt="Portrait of Olukoyede Osomo"/);
   assert.match(css, /:focus-visible/);
   assert.match(css, /prefers-reduced-motion/);
   assert.match(js, /IntersectionObserver/);
