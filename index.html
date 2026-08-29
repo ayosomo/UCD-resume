@@ -72,9 +72,9 @@
       </section>
 
       <section class="principles" aria-label="Core engineering principles">
-        <article><span class="principle-number">01</span><div><h2>Accessible by default</h2><p>Semantic, keyboard-aware and inclusive from the first component.</p></div></article>
-        <article><span class="principle-number">02</span><div><h2>Built for change</h2><p>Clear contracts and maintainable systems that scale with the product.</p></div></article>
-        <article><span class="principle-number">03</span><div><h2>Evidence over guesswork</h2><p>Critical journeys tested and quality checks built into delivery.</p></div></article>
+        <article><span class="principle-number">1</span><div><h2>Accessible by default</h2><p>Semantic, keyboard-aware and inclusive from the first component.</p></div></article>
+        <article><span class="principle-number">2</span><div><h2>Built for change</h2><p>Clear contracts and maintainable systems that scale with the product.</p></div></article>
+        <article><span class="principle-number">3</span><div><h2>Evidence over guesswork</h2><p>Critical journeys tested and quality checks built into delivery.</p></div></article>
       </section>
 
       <section class="work-section section-shell" id="work" aria-labelledby="work-title">
@@ -90,16 +90,29 @@
           <article class="project-card project-featured reveal">
             <div class="project-visual trackvera-visual" aria-hidden="true">
               <div class="mock-window">
-                <div class="mock-sidebar"><span></span><span></span><span></span><span></span></div>
+                <div class="mock-sidebar">
+                  <strong>TV</strong>
+                  <span class="active"></span><span></span><span></span><span></span>
+                  <small>AO</small>
+                </div>
                 <div class="mock-content">
-                  <div class="mock-heading"></div>
-                  <div class="mock-stat-row"><span></span><span></span><span></span></div>
-                  <div class="mock-table"><span></span><span></span><span></span><span></span></div>
+                  <div class="mock-toolbar"><div><small>DELIVERY CONTROL</small><strong>Active projects</strong></div><span>+ New project</span></div>
+                  <div class="mock-stat-row">
+                    <div><small>ON TRACK</small><strong>18</strong><em>+3 this week</em></div>
+                    <div><small>AT RISK</small><strong>4</strong><em>Needs review</em></div>
+                    <div><small>COMPLETION</small><strong>84%</strong><em>Across portfolio</em></div>
+                  </div>
+                  <div class="mock-table">
+                    <div class="mock-table-head"><span>PROJECT</span><span>OWNER</span><span>STAGE</span><span>STATUS</span></div>
+                    <div><strong>Northstar rollout</strong><span>AO</span><span>Build</span><em>On track</em></div>
+                    <div><strong>Atlas migration</strong><span>KM</span><span>Testing</span><em class="warning">At risk</em></div>
+                    <div><strong>Orion launch</strong><span>JS</span><span>Handover</span><em>On track</em></div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="project-copy">
-              <div class="project-index"><span>01</span><span>Operations SaaS</span></div>
+              <div class="project-index"><span>1</span><span>Operations SaaS</span></div>
               <h3>Trackvera</h3>
               <p>An order-control workspace that makes delivery milestones, exceptions and RACI accountability visible at a glance.</p>
               <div class="project-proof">
@@ -117,11 +130,16 @@
           <div class="project-pair">
             <article class="project-card reveal">
               <div class="project-visual commitvista-visual" aria-hidden="true">
-                <div class="activity-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-                <div class="activity-note"><span></span><span></span></div>
+                <div class="activity-shell">
+                  <div class="activity-header"><div><small>COMMITVISTA</small><strong>Repository pulse</strong></div><span>Live</span></div>
+                  <div class="activity-stats"><div><small>COMMITS</small><strong>142</strong></div><div><small>MERGED PRS</small><strong>26</strong></div><div><small>CONTRIBUTORS</small><strong>8</strong></div></div>
+                  <div class="activity-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                  <div class="activity-axis"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+                </div>
+                <div class="activity-note"><small>LATEST ACTIVITY</small><strong>feat/dashboard</strong><span>New insights panel merged</span><em>4 min ago</em></div>
               </div>
               <div class="project-copy">
-                <div class="project-index"><span>02</span><span>Engineering intelligence</span></div>
+                <div class="project-index"><span>2</span><span>Engineering intelligence</span></div>
                 <h3>CommitVista</h3>
                 <p>A live GitHub activity dashboard that turns public signals into useful context without reducing people to a score.</p>
                 <ul class="tags" aria-label="CommitVista technology"><li>React</li><li>TypeScript</li><li>GitHub API</li></ul>
@@ -134,11 +152,17 @@
 
             <article class="project-card reveal">
               <div class="project-visual elementsmith-visual" aria-hidden="true">
-                <div class="component-stack"><span>Button</span><span>Input</span><span>Dialog</span></div>
-                <div class="component-cursor">+</div>
+                <div class="component-browser">
+                  <div class="component-browser-bar"><span></span><span></span><span></span><small>elementsmith.dev/button</small></div>
+                  <div class="component-workbench">
+                    <div class="component-nav"><strong>Elements</strong><span class="selected">Button</span><span>Input</span><span>Dialog</span><span>Tabs</span></div>
+                    <div class="component-preview"><small>PREVIEW</small><button type="button" tabindex="-1">Create project <span>→</span></button><div><span>Default</span><span>Medium</span><span>Icon right</span></div></div>
+                  </div>
+                </div>
+                <div class="component-badge">WC</div>
               </div>
               <div class="project-copy">
-                <div class="project-index"><span>03</span><span>Interface system</span></div>
+                <div class="project-index"><span>3</span><span>Interface system</span></div>
                 <h3>ElementSmith</h3>
                 <p>An accessible component playground built with browser-native technologies and deliberate interaction contracts.</p>
                 <ul class="tags" aria-label="ElementSmith technology"><li>Web Components</li><li>CSS</li><li>Vite</li></ul>
@@ -219,9 +243,10 @@
         </div>
         <div class="about-copy reveal">
           <p class="eyebrow">About</p>
-          <h2 id="about-title">Curiosity across disciplines.</h2>
-          <p class="about-lead">I came to software through sport science, customer service and a full-stack development programme. That mix taught me to look at systems from more than one angle.</p>
-          <p>Today I focus on frontend engineering: the point where product intent, technical constraints and human behaviour meet. I enjoy taking a busy workflow and finding the structure that makes it feel obvious.</p>
+          <h2 id="about-title">Experience that connects systems and people.</h2>
+          <p class="about-lead">My path into frontend engineering combines a foundation in sport and exercise science, full-stack development training and more than four years of enterprise technology delivery.</p>
+          <p>Alongside delivering enterprise connectivity at TalkTalk Business, I design and build independent frontend products. My earlier Scrum Master work at NableTech strengthened how I translate product goals, user feedback and delivery constraints into incremental releases.</p>
+          <p>I now focus on turning operational workflows, live data and reusable interface patterns into accessible, dependable experiences that people can trust.</p>
           <div class="education-row">
             <div><span>2019—2020</span><strong>Full-Stack Web Development</strong><p>Code Institute</p></div>
             <div><span>2014—2017</span><strong>BSc Sport & Exercise Science</strong><p>Manchester Metropolitan University</p></div>
@@ -246,3 +271,4 @@
     </footer>
   </body>
 </html>
+

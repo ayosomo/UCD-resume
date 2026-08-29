@@ -30,6 +30,15 @@ test("links every featured project to source and a live product", () => {
   assert.match(html, /ayosomo\.github\.io\/elementsmith/);
 });
 
+test("uses natural numbering and content-rich project previews", () => {
+  assert.doesNotMatch(html, /class="(?:principle-number|project-index)"[^>]*>[\s\S]*?<span>0[1-9]<\/span>/);
+  assert.match(html, /<span class="principle-number">1<\/span>/);
+  assert.match(html, /<div class="project-index"><span>1<\/span>/);
+  assert.match(html, /DELIVERY CONTROL/);
+  assert.match(html, /Repository pulse/);
+  assert.match(html, /component-workbench/);
+});
+
 test("adds resume context without republishing private contact details", () => {
   assert.match(html, /Ethernet Delivery Specialist/);
   assert.match(html, /TalkTalk Business/);
@@ -42,6 +51,10 @@ test("adds resume context without republishing private contact details", () => {
   assert.doesNotMatch(html, /Legal & General/);
   assert.match(html, /Code Institute/);
   assert.match(html, /Manchester Metropolitan University/);
+  assert.match(html, /more than four years of enterprise technology delivery/);
+  assert.match(html, /delivering enterprise connectivity at TalkTalk Business/);
+  assert.match(html, /Scrum Master work at NableTech/);
+  assert.doesNotMatch(html, /customer service/i);
   assert.doesNotMatch(html, /Torcross|07450|1912894542|M9 0QP|07852|ayo\.osomo@/i);
 });
 
@@ -59,3 +72,4 @@ test("includes social and search metadata", () => {
   assert.match(html, /name="twitter:card" content="summary_large_image"/);
   assert.match(html, /name="description"/);
 });
+
